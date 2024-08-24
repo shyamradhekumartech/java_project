@@ -15,6 +15,9 @@ public class Example1 {
     }
 
     public int[] findEvenNumUsingArray(int[] array) {
+        if (array == null || array.length == 0)
+            return new int[]{};
+
         return Arrays.stream(array)
                 .filter(num -> num % 2 == 0)
                 .toArray();

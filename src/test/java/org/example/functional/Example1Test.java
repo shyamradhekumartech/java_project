@@ -25,4 +25,28 @@ class Example1Test {
         Assertions.assertNotNull(newArray);
     }
 
+    @Test
+    void findEvenNumUsingArray_emptyArray() {
+        // Arrange
+        int[] array = new int[] {};
+
+        // Act
+        int[] newArray = example1.findEvenNumUsingArray(array);
+
+        // Assert
+        Assertions.assertNotNull(newArray);
+    }
+
+    @Test
+    void findEvenNumUsingArray_nullArray() {
+        // Arrange
+        int[] array = null;
+
+        // Act
+        int[] newArray = example1.findEvenNumUsingArray(array);
+
+        // Assert
+        Assertions.assertNotNull(newArray);
+    }
+
 }
