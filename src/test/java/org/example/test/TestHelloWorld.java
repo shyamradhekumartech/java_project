@@ -18,7 +18,7 @@ public class TestHelloWorld {
 
         String helloWorld = (String) privateMethod.invoke(test);
 
-        Assertions.assertNotNull(helloWorld, "Returning String should not empty or null");
+        Assertions.assertNotNull(helloWorld, "Returning String should not be empty or null");
     }
 
 }
